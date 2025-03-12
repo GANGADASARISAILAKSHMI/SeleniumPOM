@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/reportngClass.css" rel="stylesheet" />
+  <script type="text/javascript" src="js/reportngClass.js"></script>
+  <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+  <script type="text/javascript" src="js/json-min.js"></script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		$('.tablesorter').tablesorter({sortList: [[0,0]]});
+	});
+  </script>
+</head>
+<body onload="doParse(); return false;" onkeypress="collapseExpand();">
+<div class="well well-large">
+	<b>Test Info</>
+	<table class="table">
+	  <tr>
+	    <th>Test Name : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Test name</span>
+			</div>
+	    </th>
+	    <th id="testNameId">Test</th> 
+	  </tr>
+	  <tr>
+	    <th>Test Class : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testClassId')"/>
+	    		<span class="tooltiptextCustom">Copy full path Class name</span>
+			</div>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testClassNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Class name</span>
+			</div>
+	    </th> 
+	    <th id="testClassId">DemoMaven.Test1<br>DemoMaven.Test2<br>DemoMaven.Test3<br></th>
+	    <th id="testClassNameId" hidden="true">Test1<br>Test2<br>Test3<br></th>
+	  </tr>
+	  <tr>
+	    <th>Suite Name : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite name</span>
+			</div>
+		</th>
+	    <th id="suiteNameId">Suite</th>
+	  </tr>
+	  <tr>
+	    <th>Suite XML : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteXMLId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite full path name</span>
+			</div>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteXMLNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite file name</span>
+			</div>
+	    </th> 
+	  	<th id="suiteXMLId">C:\Users\pjaga\eclipse-workspace\HybridTesting\testng.xml</th>
+	  	<th id="suiteXMLNameId" hidden="true">testng.xml</th>
+	  </tr>
+	  	  <tr>
+	    <th>Total Time : </th>
+	    <th></th>
+	    <th>00:00:33</th> 
+	  </tr>
+	  <tr>
+	    <th>Total Steps : </th>
+	   	<th></th>
+	    <th>3</th> 
+	  </tr>
+	  <tr>
+	    <th>Status : </th>
+	    <th></th>
+	    <th><font color="red">FAIL</font></th> 
+	  </tr>
+	</table>
+</div>
+<div class="well well-large">
+	<div class="row">
+		<div class="col-xs-12">
+	        <div class="text-right">
+	            <button id="hideResults" type="button" class="btn-danger" onclick="collapseExpand(this);" onkeypress="collapseExpand(this);" class="btn pull-right" title="Click or Press Any key to collapse/expand All Failed Tests and Configuration Methods">Show Only Failures</button>
+	        </div>
+	    </div>
+	</div>
+	<table class="tablesorter" border="1">
+		<thead>
+		<tr>
+		<th class="headerTime">Time</th>
+		<th class="headerTime" width="12%">Info</th>
+		<th class="headerTime" width="88%">Test</th>
+		</tr>
+		</thead>
+		<tbody>
+		
+				
+				
+																				
+											<tr>
+	<td class="time">1741668026471</td>
+	<td class="header failed" colspan="4" onClick="toggleElement('4f1b3559-54b7-466f-8496-27bd2b7b6c0b','block');changeSingleIcon('span-4f1b3559-54b7-466f-8496-27bd2b7b6c0b');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>DemoMaven.Test2</div>
+	<div style="float:right;">@Test @ with DataProvider : ["dp1"] &nbsp;&nbsp;<span id='span-4f1b3559-54b7-466f-8496-27bd2b7b6c0b' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1741668026471</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>Testloginbutton</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>2.753s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"Admin", "admin123", "Dashboard"</span><br>
+				<div class="noCollapse" id="4f1b3559-54b7-466f-8496-27bd2b7b6c0b" style="display: block;">
+						<a href="javascript:toggleElement('exception-4f1b3559-54b7-466f-8496-27bd2b7b6c0b','block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [Dashboard] but found [Pizarra de pendientes]</b></a><br/>
+		<div class="stackTrace" id="exception-4f1b3559-54b7-466f-8496-27bd2b7b6c0b">
+					org.testng.Assert.fail(Assert.java:111)<br/>
+					org.testng.Assert.failNotEquals(Assert.java:1578)<br/>
+					org.testng.Assert.assertEqualsImpl(Assert.java:150)<br/>
+					org.testng.Assert.assertEquals(Assert.java:132)<br/>
+					org.testng.Assert.assertEquals(Assert.java:656)<br/>
+					org.testng.Assert.assertEquals(Assert.java:666)<br/>
+					DemoMaven.Test2.Testloginbutton(Test2.java:41)<br/>
+					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:580)<br/>
+					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)<br/>
+					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)<br/>
+					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)<br/>
+					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)<br/>
+					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1596)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:739)<br/>
+					org.testng.TestRunner.run(TestRunner.java:614)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:421)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:312)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1208)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1112)<br/>
+					org.testng.TestNG.run(TestNG.java:1079)<br/>
+					org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)<br/>
+					org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br/>
+					org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)<br/>
+					org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)<br/>
+					org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br/>
+					org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)<br/>
+					org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+									<tr>
+	<td class="time">1741668040014</td>
+	<td class="header failed" colspan="4" onClick="toggleElement('14e71b03-01f6-499f-8f08-66a1b7b7b597','block');changeSingleIcon('span-14e71b03-01f6-499f-8f08-66a1b7b7b597');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>DemoMaven.Test3</div>
+	<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-14e71b03-01f6-499f-8f08-66a1b7b7b597' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1741668040014</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>TestMenu</span><br>
+			<span class="description"><b>Description: </b></span><br>
+							<span class="duration"><b>Duration: </b>2.470s</span><br>
+	</td>
+	<td class="result">
+						<div class="noCollapse" id="14e71b03-01f6-499f-8f08-66a1b7b7b597" style="display: block;">
+						<a href="javascript:toggleElement('exception-14e71b03-01f6-499f-8f08-66a1b7b7b597','block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [Leave] but found [Pizarra de pendientes]</b></a><br/>
+		<div class="stackTrace" id="exception-14e71b03-01f6-499f-8f08-66a1b7b7b597">
+					org.testng.Assert.fail(Assert.java:111)<br/>
+					org.testng.Assert.failNotEquals(Assert.java:1578)<br/>
+					org.testng.Assert.assertEqualsImpl(Assert.java:150)<br/>
+					org.testng.Assert.assertEquals(Assert.java:132)<br/>
+					org.testng.Assert.assertEquals(Assert.java:656)<br/>
+					org.testng.Assert.assertEquals(Assert.java:666)<br/>
+					DemoMaven.Test3.TestMenu(Test3.java:33)<br/>
+					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:580)<br/>
+					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)<br/>
+					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)<br/>
+					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)<br/>
+					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)<br/>
+					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1596)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:739)<br/>
+					org.testng.TestRunner.run(TestRunner.java:614)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:421)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:312)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1208)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1112)<br/>
+					org.testng.TestNG.run(TestNG.java:1079)<br/>
+					org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)<br/>
+					org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br/>
+					org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)<br/>
+					org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)<br/>
+					org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)<br/>
+					org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)<br/>
+					org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+						
+				
+												<tr>
+			<td class="time">1741668014734</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('ebb9b985-7bab-4e51-8fbd-1d3f9815f205','block');changeSingleIcon('span-ebb9b985-7bab-4e51-8fbd-1d3f9815f205');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>DemoMaven.Test1</div>
+			<div style="float:right;">@Test @ with DataProvider : ["title"] &nbsp;&nbsp;<span id='span-ebb9b985-7bab-4e51-8fbd-1d3f9815f205' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1741668014734</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>TestTitle</span><br>
+			<span class="description"><b>Description: </b></span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>1</font></span><br>
+						<span class="duration"><b>Duration: </b>5.256s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"OrangeHRM"</span><br>
+				<div class="stackTrace" id="ebb9b985-7bab-4e51-8fbd-1d3f9815f205" style="display: block;">
+					</td>
+	</div>
+</tr>
+					  
+	</tbody>
+	</table>
+</div>
+</body>
+</html>
